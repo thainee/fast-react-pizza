@@ -1,1 +1,1 @@
-Everything I post here is for EDUCATIONAL PURPOSES ONLY.
+Everything I post here is for my EDUCATIONAL PURPOSES ONLY.
