@@ -34,11 +34,11 @@ function Cart() {
 
       <h2>Your cart, %NAME%</h2>
 
-      <div>
+      <div className="space-x-3">
         <Button to="/order/new" type="primary">
           Order pizzas
         </Button>
-        <button>Clear cart</button>
+        <Button type="secondary">Clear cart</Button>
       </div>
     </div>
   );
