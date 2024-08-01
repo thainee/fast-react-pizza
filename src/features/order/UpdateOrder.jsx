@@ -7,7 +7,7 @@ function UpdateOrder() {
 
   return (
     <fetcher.Form method="PATCH" className="text-right">
-      <Button type="primary">Make priority</Button>
+      <Button type="primary">{fetcher.state !== "idle" ? "Updating..." : "Make priority"}</Button>
     </fetcher.Form>
   );
 }
