@@ -124,7 +124,7 @@ function CreateOrder() {
             <input
               type="hidden"
               name="position"
-              value={JSON.stringify(position)}
+              value={`latitude: ${position.latitude}, longitude: ${position}`}
             />
           ) : null}
           <Button disabled={isSubmitting} type="primary">
@@ -147,10 +147,6 @@ export async function action({ request }) {
     priority: data.priority === "true",
     cart: JSON.parse(data.cart),
   };
-
-  if (data.position) {
-    order.position = JSON.parse(data.position);
-  }
 
   const errors = {};
 
