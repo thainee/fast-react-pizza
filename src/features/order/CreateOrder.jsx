@@ -91,7 +91,7 @@ function CreateOrder() {
                   }}
                   disabled={isAddressLoading}
                 >
-                  Get address
+                  {isAddressLoading ? "Getting..." : "Get address"}
                 </Button>
               </span>
             ) : null}
