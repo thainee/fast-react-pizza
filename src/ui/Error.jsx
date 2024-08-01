@@ -5,7 +5,7 @@ function Error() {
   const error = useRouteError();
 
   return (
-    <div>
+    <div className="px-4 py-3">
       <h1>Something went wrong 😢</h1>
       <p>{error.data || error.message}</p>
       <LinkButton to={-1}>&larr; Go back</LinkButton>
